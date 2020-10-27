@@ -40,6 +40,7 @@ pub use frame_support::{
 
 /// Import the template pallet.
 pub use pallet_template;
+pub use orml_nft;
 
 /// An index to a block.
 pub type BlockNumber = u32;
@@ -244,6 +245,14 @@ impl pallet_balances::Trait for Runtime {
 	type WeightInfo = ();
 }
 
+// Add NFT
+impl orml_nft::Trait for Runtime {
+	type ClassId = u64;
+	type TokenId = u64;
+	type ClassData = module_nft::ClassData;
+	type TokenData = module_nft::TokenData;
+}
+
 parameter_types! {
 	pub const TransactionByteFee: Balance = 1;
 }
@@ -283,6 +292,7 @@ construct_runtime!(
 		Sudo: pallet_sudo::{Module, Call, Config<T>, Storage, Event<T>},
 		// Include the custom logic from the template pallet in the runtime.
 		TemplateModule: pallet_template::{Module, Call, Storage, Event<T>},
+		OrmlNFT: orml_nft::{Module, Storage},
 	}
 );
 
