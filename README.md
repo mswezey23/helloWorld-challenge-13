@@ -9,8 +9,8 @@
 ## Screenshots:
 
 ### Deployed `SHIFT` token
-![Deployed New Token](./challenge-13-0.png)
+![Deployed New Token](https://github.com/ShiftNrg/hello-world-by-polkadot/blob/challenge-13/challenge-13-0.png)
 ### Transfer Tokens `SHIFT` token
-![](./challenge-13-1.png)
+![](https://github.com/ShiftNrg/hello-world-by-polkadot/blob/challenge-13/challenge-13-1.png)
 ### Verify Balance `SHIFT` token
-![](./challenge-13-2.png)
+![](https://github.com/ShiftNrg/hello-world-by-polkadot/blob/challenge-13/challenge-13-2.png)
